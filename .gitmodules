@@ -1,3 +1,6 @@
 [submodule "pico-sdk/lib/FreeRTOS-Kernel"]
 	path = pico-sdk/lib/FreeRTOS-Kernel
 	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+[submodule "pico-sdk/lib/coreHTTP"]
+	path = pico-sdk/lib/coreHTTP
+	url = https://github.com/FreeRTOS/coreHTTP.git
