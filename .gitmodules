@@ -4,3 +4,6 @@
 [submodule "pico-sdk/lib/coreHTTP"]
 	path = pico-sdk/lib/coreHTTP
 	url = https://github.com/FreeRTOS/coreHTTP.git
+[submodule "pico-sdk/lib/cJSON"]
+	path = pico-sdk/lib/cJSON
+	url = https://github.com/DaveGamble/cJSON.git
