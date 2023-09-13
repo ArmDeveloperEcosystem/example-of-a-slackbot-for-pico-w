@@ -42,7 +42,7 @@ class SlackBot:
             response.close()
 
             ws_url = open_json["url"]
-            # ws_url += "&debug_reconnects=true"
+            ws_url += "&debug_reconnects=true"
 
             self._ws = websocket_client.WebSocket()
             self._ws.connect(ws_url)

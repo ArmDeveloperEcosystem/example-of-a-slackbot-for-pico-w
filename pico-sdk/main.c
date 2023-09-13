@@ -44,7 +44,7 @@ void main_task(void*)
     LogInfo(("Connecting to Wi-Fi SSID '%s'", WIFI_SSID));
     if (cyw43_arch_wifi_connect_timeout_ms(WIFI_SSID, WIFI_PASSWORD, CYW43_AUTH_WPA2_AES_PSK, 30000)) {
         LogError(("Failed to connect to Wi-Fi SSID '%s' !", WIFI_SSID));
-        
+        while (true) { vTaskDelay(100); }
     } else {
         LogInfo(("Connected to Wi-Fi SSID '%s'", WIFI_SSID));
     }
@@ -53,6 +53,8 @@ void main_task(void*)
         LogError(("Failed to initialize Slack client!"));
         while(true) { vTaskDelay(100); }    
     }
+
+    slack_client_post_message(&slack_client, "Hello Slack!", "pico-w-app-test");
 
     while (1) {
         cJSON* event_json = slack_client_poll(&slack_client);
