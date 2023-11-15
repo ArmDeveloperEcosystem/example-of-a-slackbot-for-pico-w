@@ -54,8 +54,6 @@ void main_task(void*)
         while(true) { vTaskDelay(100); }    
     }
 
-    slack_client_post_message(&slack_client, "Hello Slack!", "pico-w-app-test");
-
     while (1) {
         cJSON* event_json = slack_client_poll(&slack_client);
         if (event_json == NULL) {
