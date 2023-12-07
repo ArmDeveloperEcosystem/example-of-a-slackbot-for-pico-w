@@ -1,3 +1,8 @@
+//
+// SPDX-FileCopyrightText: Copyright 2023 Arm Limited and/or its affiliates <open-source-office@arm.com>
+// SPDX-License-Identifier: MIT
+//
+
 #ifndef __LOGGING_H__
 #define __LOGGING_H__
 

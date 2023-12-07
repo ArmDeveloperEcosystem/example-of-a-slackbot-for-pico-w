@@ -1,3 +1,9 @@
+//
+// SPDX-FileCopyrightText: Copyright 2023 Arm Limited and/or its affiliates <open-source-office@arm.com>
+// SPDX-License-Identifier: MIT
+//
+
+
 #ifndef __SLACK_CLIENT_H__
 #define __SLACK_CLIENT_H__
 
