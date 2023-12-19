@@ -3,8 +3,7 @@
 # SPDX-License-Identifier: MIT
 #
 
-
-import random
+from os import urandom
 
 from ubinascii import b2a_base64
 import usocket
@@ -46,9 +45,7 @@ class WebSocket:
             if proto == "wss:":
                 s = ussl.wrap_socket(s, server_hostname=host)
 
-            key = bytearray(16)
-            for i in range(len(key)):
-                key[i] = random.randint(0, 255)
+            key = urandom(16)
 
             s.write(f"GET /{path} HTTP/1.1\r\n")
             s.write(f"Host: {host}\r\n")
