@@ -4,6 +4,8 @@ Connect your [Raspberry Pi Pico W](https://www.raspberrypi.com/products/raspberr
 
 Requires a Slack App token and Slack Bot token.
 
+Learn more in the [Raspberry Pi "Create your own Slack bot with a Raspberry Pi Pico W" guest blog post](https://www.raspberrypi.com/news/create-your-own-slack-bot-with-a-raspberry-pi-pico-w/).
+
 
 ## Hardware
 
@@ -18,7 +20,7 @@ Requires a Slack App token and Slack Bot token.
 3. Update [config.py](micropython/config.py) with your:
    * Wi-Fi SSID and Password
    * Slack App token and Bot token
-4. Run [main.py]()
+4. Run [main.py](micropython/main.py)
 
 ## pico-sdk
 
