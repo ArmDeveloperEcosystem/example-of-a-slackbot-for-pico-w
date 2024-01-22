@@ -290,7 +290,7 @@ int slack_client_post_message(slack_client_t* client, const char* text, const ch
     }
 
     if (cJSON_IsFalse(ok_json)) {
-        LogError(("slack_client_open_app_connection: 'ok' response value is false!"));
+        LogError(("slack_client_post_message: 'ok' response value is false!"));
         cJSON_Delete(json);
         return -1;
     }
